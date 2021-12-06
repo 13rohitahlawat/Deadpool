@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+//-------------- navbar start ------------------//
+.navbar {
+  .navbarContainer {
+    .NavbarCollapse {
+      .NavbarLinks {
+        .NavLink {
+          color: #000;
+          font-size: 18px;
+        }
+
+        .NavActive {
+          font-weight: bold;
+          border-bottom: 2px solid #c85965;
+        }
+      }
+    }
+  }
+}
+//------------ navbar end ------------------//
+
+//------------ landing Section start ------------------//
+
+.LandingSection {
+  position: relative;
+  background-image: url(".//pic.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+
+  .landingSectionInner {
+    width: 380px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+
+    .hashHeading {
+      color: #bdbdbd;
+    }
+
+    .innerHeading {
+      font-size: 3.6rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      span {
+        color: #b21125;
+      }
+    }
+
+    .BuyAccessBtn {
+      border: 1px solid #bdbdbd;
+      box-shadow: none;
+      border-radius: 50px;
+      padding: 10px 40px;
+      background-color: #fff;
+
+      span {
+        i {
+          color: #b21125;
+        }
+      }
+    }
+  }
+}
+//------------ landing Section end ------------------//
+
+//----------------- media query--------------//
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    .navbarContainer {
+      .NavbarCollapse {
+        background-color: #fff;
+      }
+    }
+  }
+  .LandingSection {
+    width: 100%;
+    background-size: cover;
+
+    .landingSectionInner {
+      width: 200px;
+
+      .innerHeading {
+        font-size: 1.8rem;
+      }
+      .BuyAccessBtn {
+        padding: 5px 15px;
+      }
+    }
+  }
+}
+//----------------- media query--------------/
